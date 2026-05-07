@@ -8,42 +8,38 @@
         body { background-color: #0d1b2a; color: white; font-family: sans-serif; margin: 0; padding: 20px; text-align: center; }
         .header { background: #1b263b; padding: 15px; border-radius: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #415a77; }
         .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-        .card { background: #1b263b; border-radius: 12px; padding: 15px; border: 1px solid #415a77; position: relative; }
-        .coin-amount { font-weight: bold; font-size: 18px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
-        .coin-icon { color: #f1c40f; margin-right: 5px; }
-        .img-placeholder { background: #415a77; height: 100px; border-radius: 5px; margin: 10px 0; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #ccc; }
-        .btn-free { background: #3a86ff; color: white; border: none; padding: 8px; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+        .card { background: #1b263b; border-radius: 12px; padding: 10px; border: 1px solid #415a77; }
+        .coin-amount { font-weight: bold; font-size: 16px; margin-bottom: 5px; }
+        .coin-img { width: 100%; border-radius: 8px; }
+        .btn-free { background: #3a86ff; color: white; border: none; padding: 8px; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
     </style>
 </head>
 <body>
-
     <div class="header">
         <span>eFootball™ 2026</span>
-        <span style="color:#f1c40f">● MyClub Coins</span>
+        <span style="color:#f1c40f">🟡 MyClub</span>
     </div>
-
     <div class="grid">
         <div class="card">
-            <div class="coin-amount"><span class="coin-icon">🟡</span> 300</div>
-            <div class="img-placeholder">Image Not Found</div>
-            <button class="btn-free">Free</button>
+            <div class="coin-amount">🟡 300</div>
+            <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins300.png" class="coin-img">
+            <button class="btn-free">FREE</button>
         </div>
         <div class="card">
-            <div class="coin-amount"><span class="coin-icon">🟡</span> 1,040</div>
-            <div class="img-placeholder">Image Not Found</div>
-            <button class="btn-free">Free</button>
+            <div class="coin-amount">🟡 1,040</div>
+            <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins1040.png" class="coin-img">
+            <button class="btn-free">FREE</button>
         </div>
         <div class="card">
-            <div class="coin-amount"><span class="coin-icon">🟡</span> 2,130</div>
-            <div class="img-placeholder">Image Not Found</div>
-            <button class="btn-free">Free</button>
+            <div class="coin-amount">🟡 2,130</div>
+            <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins2130.png" class="coin-img">
+            <button class="btn-free">FREE</button>
         </div>
         <div class="card">
-            <div class="coin-amount"><span class="coin-icon">🟡</span> 12,000</div>
-            <div class="img-placeholder">Image Not Found</div>
-            <button class="btn-free">Free</button>
+            <div class="coin-amount">🟡 12,000</div>
+            <img src="https://raw.githubusercontent.com/nojo53/efootball-assets/main/coins12000.png" class="coin-img">
+            <button class="btn-free">FREE</button>
         </div>
     </div>
-
 </body>
 </html>
